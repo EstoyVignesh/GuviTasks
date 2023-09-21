@@ -8,14 +8,16 @@ public class AtoZ {
 		
 		// TODO Auto-generated method stub
 		
-Scanner ch = new Scanner(System.in);
-String a = ch.nextLine();
-String cha = "Z";
+//Scanner ch = new Scanner(System.in);
+char ch, strChar;
+Scanner sc = new Scanner(System.in);
 
-for(int i= 0;i<='Z';i++) {
-	System.out.println("The Aplthabets from A to Z are : "+a);
+System.out.print("Please Enter any Character =  ");
+strChar = sc.next().charAt(0);
 
-  }
+for(ch = strChar; ch <= 'Z'; ch++) {
+	System.out.print(ch + " ");
+}
 
 
 
