@@ -3,9 +3,9 @@ package OOPs_Task10;
 
 class Person
 {
-	String name;
+	String name;  // Initializing Variable
 	int age;
-	public String getName() {
+	public String getName() {  // Right click Variable --> go to Source --> select Getter and Setter
 		return name;
 	}
 	public void setName(String n) {
@@ -18,29 +18,32 @@ class Person
 		age = a;
 	}
 	
-	/*Person()
-	{
-		name = "Jacky";
-		age = 35;
-		
-	System.out.println(name+" is his name"+","+age+" is his age.");
-	}
-	
-	*/
 	
 }
 public class CreateClassQ1 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-Person att = new Person();
+		
+		
+Person att = new Person();  // Creating Instance for Persion Class 
 //att.getClass();
 
-att.setName("Jacky");
+att.setName("Jacky");  // Setting Values for Variable by Calling Object
 att.setAge(35);
 
-System.out.println(att.getName());
+System.out.println(att.getName());  // Getting Values by Calling Object
 System.out.println(att.getAge());
 	}
 
 }
+
+
+/*Person()
+{
+	name = "Jacky";
+	age = 35;
+	
+System.out.println(name+" is his name"+","+age+" is his age.");
+}
+
+*/

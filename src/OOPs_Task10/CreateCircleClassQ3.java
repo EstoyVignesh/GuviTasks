@@ -15,10 +15,12 @@ class Circle
 	}
 
 	
-	Circle(int radius, double pi)
+	Circle(int radius, double pi)  //Initializing Arguments by using Constructor
 	{
-		double circumference = (2*pi*radius);
+		double circumference = (2*pi*radius);  // Using Double Keyword for Fetching Decimal point Values
 	}
+	
+	
 	public void normal1(int i, double d) {
 		double circumference = i*d*2;
 		System.out.println("The value of circumference is "+circumference);

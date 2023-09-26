@@ -1,6 +1,6 @@
 package OOPs_Task10;
 
-class NTea
+class NTea // Using Hierarchical Inheritance to inherit Data's of One Parent From Different Child Classes
 {
 	void prepareTea()
 	{
@@ -51,7 +51,7 @@ class HerbalTea extends NTea
 public class SubclassofTeaClassQ6 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 		BlackTea ob = new BlackTea();
 		ob.prepareTea();
 		
