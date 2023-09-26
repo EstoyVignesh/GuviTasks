@@ -16,7 +16,7 @@ interface employee
 	void raiseSalary();
 }
 
-public class ImplementationofJavaClass implements employee {
+public class ImplementationofJavaClassQ2 implements employee {
 	
 	@Override
 	public void empDetails() {
@@ -42,7 +42,7 @@ public class ImplementationofJavaClass implements employee {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		ImplementationofJavaClass obj = new ImplementationofJavaClass();
+		ImplementationofJavaClassQ2 obj = new ImplementationofJavaClassQ2();
 		obj.empDetails();
 		
 
