@@ -30,7 +30,7 @@ class Circle
 } 
 
 
-public class CreateCircleClass {
+public class CreateCircleClassQ3 {
 	public static void main(String[] args) {
 		
 	Circle obj = new Circle();
