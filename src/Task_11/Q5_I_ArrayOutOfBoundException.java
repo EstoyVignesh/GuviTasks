@@ -6,22 +6,22 @@ public class Q5_I_ArrayOutOfBoundException {
 		// TODO Auto-generated method stub
 
 		
-		int arr[] = {1,5,8,2};
+		int arr[] = {1,5,8,2};   // Variable Declaration
 		
 	System.out.println("The Length of arr[] Counted Index from '0' onwards  is : "+arr.length);
 	
 	
-	try {
+	try {         // Used try block whether the output throws Exception or not
 	System.out.println("The value of arr[4] is "+arr[4]);
 	
 	}
 	
-	catch(ArrayIndexOutOfBoundsException ex)
+	catch(ArrayIndexOutOfBoundsException ex)     // Used  catch Block to print the Exception raised  Reason
 	{
 		System.out.println("Length of the Array Index is arr[] is 3 So arr[4] is Out od Bounds");
 		
 	}
-	catch(Exception ex)
+	catch(Exception ex)     //Using this to Print the reason if the Exception is Thrown
 	{
 		ex.getStackTrace();
 	}

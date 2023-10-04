@@ -7,8 +7,9 @@ public class Q4_List_to_Array {
 
 	public static void main(String[] args) {
 
-	List<String> la = new ArrayList<>();
+	List<String> la = new ArrayList<>();     //Creating a ArrayList Class from utilities package
 	
+	//Variable Declaration
 	la.add("Welcome");
 	la.add("java");
 	la.add("is a");
@@ -18,13 +19,13 @@ public class Q4_List_to_Array {
 	
 	System.out.println(la);
 	
-	String[] arr =  new String[la.size()];
+	String[] arr =  new String[la.size()]; //
 	
-	arr =la.toArray(arr);
+	arr =la.toArray(arr);  //Converting Lists to array using toArray() method
 	
 	for(int i=0;i<arr.length;i++)
 	{
-		System.out.println(arr[i]);
+		System.out.println(arr[i]);     //Variable Printing
 	}
 	
 	

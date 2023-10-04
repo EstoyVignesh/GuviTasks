@@ -6,7 +6,7 @@ public class Q4Integer_Exception {
 		// TODO Auto-generated method stub
 
 		
-		int a = 12, b = 0;
+		int a = 12, b = 0;  // Variable Declaration
 		
 		try {    // Used try block whether the output throws Exception or not
 			
@@ -19,7 +19,8 @@ public class Q4Integer_Exception {
 			System.out.println("Aritmetic Values Can't be Divided by Zero - '0'");
 			
 		}
-		catch(Exception ex1) {
+		catch(Exception ex1) {  //Using this to Print the reason if the Exception is Thrown
+			
 			ex1.getStackTrace();
 						
 		}

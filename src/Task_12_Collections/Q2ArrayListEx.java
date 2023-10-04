@@ -8,18 +8,19 @@ public class Q2ArrayListEx {
 		// TODO Auto-generated method stub
 
 		
-	ArrayList ar = new ArrayList();
+	ArrayList ar = new ArrayList();     //Creating a ArrayList Class from utilities package
 		
-		ar.add("java");
+	//Variable Declaration
+		ar.add("java");   
 		ar.add("is a ");
 		ar.add("Programming");
 		ar.add("Language");
 		
-		System.out.println("The Value of ar is : "+ar);
+		System.out.println("The Value of ar is : "+ar);  //Variable Printing
 		
 		System.out.println("====================");
 		
-		ar.removeAll(ar);
+		ar.removeAll(ar);   //Remove the all elements within the Array by using Removeall Method
 		System.out.println("The Value of ar after removing elements is : "+ar);
 		
 

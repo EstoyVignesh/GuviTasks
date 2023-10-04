@@ -10,15 +10,15 @@ public class Q8_FileNotFoundException {
 
 		
 		
-		try
+		try         // Used try block whether the output throws Exception or not
 		{
-			File file = new File("C:\\Users\\arvin\\eclipse-workspace\\learn_java\\master1.txt");
+			File file = new File("C:\\Users\\arvin\\eclipse-workspace\\learn_java\\master1.txt");  //method for creating new file by using class
 			Scanner sc = new Scanner(file);
 		}
-		catch(Exception ex)
+		catch(Exception ex)       // Used  catch Block to print the Exception raised  Reason
 		{
 			
-			ex.printStackTrace();
+			ex.printStackTrace();  //Print the Exception thrown
 		}
 		
 			System.out.println("Empty block");

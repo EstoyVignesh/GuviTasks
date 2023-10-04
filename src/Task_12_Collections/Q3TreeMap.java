@@ -9,13 +9,14 @@ public class Q3TreeMap {
 
 		TreeMap<Integer,String> tm = new TreeMap<Integer, String>();
 		
+		//Variable Declaration
 		tm.put(103, "Geek");
 		tm.put(101, "Arvind");
 		tm.put(102, "Boa");
 		tm.put(104, "Luffy");
 		tm.put(105, "Robin");
 		
-		System.out.println("The Value of tm is : "+tm);
+		System.out.println("The Value of tm is : "+tm);   //Variable Printing
 	}
 
 }
