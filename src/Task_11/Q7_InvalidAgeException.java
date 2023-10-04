@@ -1,6 +1,6 @@
 package Task_11;
 
-import advanced.ThrowException;
+
 
 public class Q7_InvalidAgeException {
 
@@ -9,7 +9,7 @@ public class Q7_InvalidAgeException {
 
 		
 		
-		ThrowException.throwArithmeticException(18);
+		ThrowException.throwArithmeticException(18);     //Creting Exception by using throw keyword
 
 		}
 

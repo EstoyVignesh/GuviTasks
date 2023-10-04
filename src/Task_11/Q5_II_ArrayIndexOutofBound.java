@@ -6,7 +6,7 @@ public class Q5_II_ArrayIndexOutofBound {
 		// TODO Auto-generated method stub
 
 		
-		String str = "Java is a Programming ";
+		String str = "Java is a Programming ";    //Variable declaration
 		String str1 = str.concat("Language");
 		
 		
@@ -18,7 +18,8 @@ public class Q5_II_ArrayIndexOutofBound {
 		
 		
 		//String str2 = str1.substring(30, 45);
-		try {
+		
+		try {             // Used try block whether the output throws Exception or not
 		
 			String str2 = str1.substring(30, 45);
 		System.out.println("The value of String str2 is : " +str2);
@@ -26,14 +27,14 @@ public class Q5_II_ArrayIndexOutofBound {
 		
 		}
 		
-		catch(StringIndexOutOfBoundsException ex)
+		catch(StringIndexOutOfBoundsException ex)       // Used  catch Block to print the Exception raised  Reason
 		{
 			System.out.println("String Index is Out of Bounds Because in line 19 End Index is mentiond 45 but the  actual Index Range is 30");
 			
 		}
 		catch(Exception ex)
 		{
-			ex.getStackTrace();
+			ex.getStackTrace();         //Print the Exception thrown
 		}
 			System.out.println("Use Try Block");
 	}

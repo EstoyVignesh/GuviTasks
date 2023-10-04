@@ -1,39 +1,47 @@
 package Task_11;
 
-
-import java.io.IOException;
-import java.rmi.AccessException;
 import java.util.Scanner;
 
-public class Q6_InvalidPasswordExceptionEx {
+
+public class Q6_InvalidPasswordExceptionEx { 
+	
+static class InvalidLoginCredentialsException extends Exception{   // Creating a static class to manage memory because of its importance
+	
+	public InvalidLoginCredentialsException(String message) {
+		
+		super(message);  // Super is used to call the Parent class
+	}
+}
+	
+	
+
+
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+	
+		Scanner sc = new Scanner(System.in);  //To let us Type the Input
 
+	try {      // Used try block whether the output throws Exception or not
 		
-		ThrowException.StringException();
+		//simulate Input
+		String username = sc.nextLine();
+		String password = sc.nextLine();
 		
-		
-		String password = "Goodpassword123";
-		//IOException.throwIOException(password);
-		
-		
-		System.out.println("Enter the Password");
-		
-		Scanner sc = new Scanner(System.in);
-		//String str = sc.nextLine();
-		
-		if(sc != password) {
-			 
-		}
+		if(!username.equals("Guvigeek123")|| !password.equals("@guvilearn21")){  //Comparing the Input and saved Credentials
 			
+			throw new InvalidLoginCredentialsException("Invalid username or password");  //Create our own Exception
+		}
+		else {
+	
+		System.out.println("Login Successful");
+		
 		}
 		
-		{
-			
-		}
-		
-		
+	}
+	
+	catch(InvalidLoginCredentialsException e) {          // Used  catch Block to print the Exception raised  Reason
+		System.err.println("Authentication Failed : "+e.getMessage());
+	}
 			
 			
 	}
